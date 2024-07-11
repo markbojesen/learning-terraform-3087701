@@ -42,7 +42,7 @@ module "blog_sg" {
   name = "blog_new"
 
   security_group_id   = aws_security_group.blog.id
-  ingress _rules      = ["http-80-tcp", "https-442-tcp"]
+  ingress _rules      = ["http-80-tcp", "https-443-tcp"]
   ingress_cidr_blocks = ["0.0.0.0/0"]
 
   egress _rules      = ["all-all"]
